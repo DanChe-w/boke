@@ -1,4 +1,5 @@
 * {
+    font-family: 微软雅黑;
     margin: 0;
     padding: 0;
 }
@@ -619,8 +620,8 @@ a {
 /*第四*/
 
 .body4_end_left {
-    margin: 2em 2em 0 20%;
-    width: 45%;
+    margin: 2em 2em 0 15%;
+    width: 50%;
     text-align: center;
 }
 
@@ -634,7 +635,6 @@ a {
 
 .body4_end_body {
     margin: 1em auto;
-    font-size: 2.5em;
     width: 100%;
     text-align: center;
 }
