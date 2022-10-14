@@ -205,24 +205,25 @@ a {
 }
 
 .end {
+    justify-content: center;
     background-color: #FFFFFF;
     display: flex;
 }
 
 .end_left {
-    margin-left: 20%;
     width: 45%;
+    padding-right:50px ;
 }
 
 .end_left > div {
     height: 20em;
-    width: 90%;
     margin: 3% 0 0 2%;
     background-color: #DCDEDF;
     display: flex;
     border-radius: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
+    transition: 400ms;
 }
 
 .end_left a {
@@ -262,6 +263,7 @@ a {
 }
 
 .end_right {
+
     white-space: nowrap;
     overflow: hidden;
     width: 15%;
@@ -411,7 +413,7 @@ a {
 }
 
 .end_right_four .span1 {
-
+    padding-left: 2px;
     text-align: right;
 }
 
@@ -497,7 +499,6 @@ a {
 
 /*第二*/
 .second {
-    margin-left: 20%;
     width: 35%;
 }
 
@@ -553,7 +554,7 @@ a {
 
 /*第三*/
 .body3_end_left {
-    margin: 2em 2em 0 20%;
+    margin: 2em 2em 0 0;
     width: 45%;
     text-align: center;
 }
@@ -605,7 +606,7 @@ a {
 
 .body4_end_left {
 
-    margin: 2em 2em 0 15%;
+    margin: 2em 2em 0 0%;
     width: 50%;
     text-align: center;
 }
