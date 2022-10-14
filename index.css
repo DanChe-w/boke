@@ -153,7 +153,7 @@ a {
 .run_top {
     width: 180px;
     height: 300px;
-    background: url(img/run.png) right bottom no-repeat;
+    background: url(run.png) right bottom no-repeat;
     animation-iteration-count: infinite; /* 动画无限播放 */
     animation-timing-function: step-start; /* 马上跳到动画每一结束桢的状态 */
     animation-name: person-normal;
