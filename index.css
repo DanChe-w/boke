@@ -69,25 +69,15 @@ a {
 
 .img_left div {
     text-align: center;
-    width: 10%;
     margin: 1em 0 0 0;
 }
 
-.img_left img {
-    width: 2em;
-    height: 2em;
-}
-
-.img_left p {
+.img_left a {
     color: white;
     font-size: 2em;
     display: inline-block;
-}
-
-.img_left a {
     text-decoration: none;
     height: 50px;
-    display: inline-flex;
     align-items: center;
 }
 
@@ -225,11 +215,14 @@ a {
 }
 
 .end_left > div {
+    height: 20em;
     width: 90%;
     margin: 3% 0 0 2%;
     background-color: #DCDEDF;
     display: flex;
     border-radius: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .end_left a {
@@ -246,14 +239,10 @@ a {
 }
 
 .img1 {
-    width: 100%;
-    height: 100%;
     border-radius: 20px 0 0 20px;
 }
 
 .img2 {
-    width: 100%;
-    height: 100%;
     border-radius: 0 20px 20px 0;
 }
 
@@ -273,6 +262,8 @@ a {
 }
 
 .end_right {
+    white-space: nowrap;
+    overflow: hidden;
     width: 15%;
 
 }
@@ -308,6 +299,7 @@ a {
 }
 
 .res {
+    overflow: hidden;
     color: white;
     margin: 0 auto;
     width: 75%;
@@ -342,6 +334,7 @@ a {
 }
 
 .end_right_second {
+
     margin-top: 9%;
     border: 1px solid #DCDEDF;
     border-radius: 10px;
@@ -363,15 +356,12 @@ a {
 }
 
 .end_right_thirdly {
+
     line-height: 2em;
     margin-top: 9%;
     border: 1px solid #DCDEDF;
     border-radius: 10px;
     font-size: 25px;
-}
-
-.end_right_thirdly a {
-    width: 100%;
 }
 
 .end_right_thirdly img {
@@ -386,9 +376,11 @@ a {
 }
 
 .end_right_four li {
+    white-space: nowrap;
+    overflow: hidden;
+    display: flex;
     height: 2em;
     line-height: 2em;
-    width: 100%;
     color: black;
     font-size: 1em;
     list-style: none;
@@ -402,32 +394,29 @@ a {
     font-size: 1em;
     list-style: none;
     background-color: #f5f5f5;
-
-}
-
-.end_right_four a {
-    color: black;
-    text-decoration: none;
 }
 
 .end_right_four span {
+
+    text-overflow: ellipsis;
     padding: 0 0 0 3em;
     display: inline-block;
     width: 30%;
 }
 
 .end_right_four span:hover {
-    padding: 0 0 0 3em;
     display: inline-block;
     font-size: 1.1em;
     transform: scale(1.1);
 }
 
 .end_right_four .span1 {
+
     text-align: right;
 }
 
 .end_right_five {
+
     line-height: 2em;
     margin-top: 9%;
     border: 1px solid #DCDEDF;
@@ -436,6 +425,7 @@ a {
 }
 
 .end_right_five img {
+    display: inline-block;
     width: 2em;
     height: 2em;
 }
@@ -449,12 +439,6 @@ a {
     list-style: none;
 }
 
-.end_right_five a {
-    color: black;
-    padding-left: 2em;
-    text-decoration: none;
-}
-
 .end_right_five li:hover {
     height: 2em;
     line-height: 2em;
@@ -465,16 +449,14 @@ a {
     background-color: #f5f5f5;
 }
 
-.end_right_five span {
-
-    display: inline-block;
-    padding: 0 0 0 3em;
-    width: 30%;
-}
-
 .end_right_six {
+
     width: 100%;
     font-size: 15px;
+}
+
+.end_right_six span {
+    color: black;
 }
 
 .end_right_six li {
@@ -498,6 +480,8 @@ a {
 }
 
 .end_right_six span {
+
+    text-overflow: ellipsis;
     padding: 0 0 0 3em;
     display: inline-block;
     width: 50%;
@@ -620,6 +604,7 @@ a {
 /*第四*/
 
 .body4_end_left {
+
     margin: 2em 2em 0 15%;
     width: 50%;
     text-align: center;
