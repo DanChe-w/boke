@@ -121,21 +121,11 @@ a {
     }
 }
 
-
-.run {
-    position: relative;
-    width: 180px;
-    height: 300px;
-    top: 40%;
-    left: 90%;
-    margin-left: -90px;
-}
-
 .run {
     position: fixed;
     width: 180px;
     height: 300px;
-    top: 70%;
+    top: 60%;
     left: 90%;
     margin-left: -90px;
 }
