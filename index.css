@@ -216,7 +216,7 @@ a {
 }
 
 .end_left > div {
-    height: 20em;
+    height: 15em;
     margin: 3% 0 0 2%;
     background-color: #DCDEDF;
     display: flex;
@@ -501,7 +501,7 @@ a {
 
 /*第二*/
 .second {
-    width: 35%;
+    width: 45%;
 }
 
 .second > div:hover {
@@ -607,24 +607,21 @@ a {
 /*第四*/
 
 .body4_end_left {
-
-    margin: 2em 2em 0 0%;
+    margin: 2em 2em 0 0;
     width: 50%;
-    text-align: center;
 }
 
 .body4_end_left_top {
     font-size: 2.5em;
     width: 100%;
-    background-color: #DEC5F1;
+    background-color:#C5EFE4;
     border-radius: 20px;
     text-align: center;
 }
 
 .body4_end_body {
-    margin: 1em auto;
+    margin: 2em auto;
     width: 100%;
-    text-align: center;
 }
 
 ul.polaroids li {
@@ -655,7 +652,7 @@ ul.polaroids a {
 
 ul.polaroids img {
     display: block;
-    height: 100px;
+    height: 80px;
     border: none;
     margin-bottom: 12px;
 }
