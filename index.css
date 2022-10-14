@@ -240,10 +240,12 @@ a {
 }
 
 .img1 {
+    width: 55%;
     border-radius: 20px 0 0 20px;
 }
 
 .img2 {
+    width: 55%;
     border-radius: 0 20px 20px 0;
 }
 
