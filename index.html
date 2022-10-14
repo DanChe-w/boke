@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="index.css" type="text/css" rel="stylesheet">
+    <title>首页</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        const scrollToTop = () => {
+            const drag = 10;
+            const gap = document.documentElement.scrollTop + 10 || document.body.scrollTop;
+            if (gap < 900) {
+                window.requestAnimationFrame(scrollToTop);
+                window.scrollTo(0, gap + gap / drag / 2);
+            }
+        };
+        $(document).ready(function () {
+            $(".to").click(function () {
+                scrollToTop()
+            });
+        });
+    </script>
+</head>
+<body class="body1">
+<div>
+    <!--    上-->
+    <div class="top">
+        <div class="body1_img">
+            <!--导航栏-->
+            <div class="img_left">
+                <div><a href="index.html">
+                    <p>首页</p></a>
+                </div>
+                <div><a href="second.html">
+                    <p>笔记</p></a>
+                </div>
+                <div><a href="thirdly.html">
+                    <p>生活</p></a>
+                </div>
+                <div><a href="four.html">
+                    <p>相册</p></a>
+                </div>
+            </div>
+
+            <!--  打字动画-->
+            <div class="img_body">
+                <span id="text"></span>
+                <span id="bar">|</span>
+            </div>
+
+            <div class="img_bottom">
+                <a class="to"><img src="img/箭头.png"></a>
+            </div>
+
+            <!--  跑步-->
+            <div class="run" id="js_wrap">
+                <div class="run_top"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!--    首页-->
+    <div class="end">
+
+        <!--        左-->
+        <div class="end_left">
+
+            <div>
+                <a href="https://spring.io/">
+                    <img src="img/end-1.png" class="img1">
+                    <div>
+                        <h1>spring学习</h1>
+                        </br>
+                        <p>Spring是分层的Java SE/EE应用full-stack轻量级开源框架,
+                            以IOC(反转控制)和
+                            AOP(面向切面编程)为内核。
+                            提供了展现层SpringMVC和持久层Spring JDBCTemplate以及业务层事务管理等众多...
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <a href="https://cn.vuejs.org/">
+                    <div>
+                        <h1>Vue学习</h1>
+                        </br>
+                        <p>基于标准 HTML、CSS 和 JavaScript 构建，
+                            提供容易上手的 API 和一流的文档。...
+                            经过编译器优化、完全响应式的渲染系统，几乎不需要手动优化...
+                        </p>
+                    </div>
+                    <img src="img/end-1.png" class="img2">
+                </a>
+            </div>
+
+            <div>
+                <a href="https://baomidou.com"><img src="img/end-1.png" class="img1">
+                    <div>
+                        <h1>Mybatis_plus学习</h1>
+                        </br>
+                        <p>它是一款半自动的ORM持久层框架，
+                            具有较高的SQL灵活性，支持高级映射(一对一，一对多)，
+                            动态SQL，延迟加载和缓存等特性，
+                            但它的数据库无关性较低...
+                        </p>
+                    </div>
+                </a>
+            </div>
+
+
+        </div>
+
+        <!--右-->
+        <div class="end_right">
+
+            <!-- 头像框-->
+            <div class="end_right_first">
+                <div><img src="img/头像.jpg"></div>
+                <div><p>單 車</p></div>
+                <div>
+                    <table>
+                        <tr>
+                            <th>文章</th>
+                            <th>标签</th>
+                            <th>分类</th>
+                        </tr>
+                        <tr>
+                            <th>10</th>
+                            <th>8</th>
+                            <th>5</th>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class="res"><a href="second.html">个人空间</a></div>
+
+                <div class="end_right_first_img">
+                    <img src="img/github.png">
+                    <img src="img/bilibili.png">
+                    <img src="img/QQ.png">
+                    <img src="img/WX.png">
+                </div>
+            </div>
+
+            <!--   名言 -->
+            <div class="end_right_second">
+                <p class="a">好好学习</p>
+                <p class="b">天天向上</p>
+            </div>
+
+            <!--分类-->
+            <div class="end_right_thirdly">
+
+                <div style="display: flex">
+                    <img src="img/分类.png">
+                    <p>分类</p>
+                </div>
+
+                <div class="end_right_four">
+                    <ul>
+                        <li>
+                            <span>前端技术</span>
+                            <span class="span1">3</span>
+                        </li>
+
+                        <li>
+                            <span>后端技术</span>
+                            <span class="span1">4</span>
+                        </li>
+
+                        <li>
+                            <span>算法</span>
+                            <span class="span1">5</span>
+                        </li>
+
+                        <li>
+                            <span>高级语言</span>
+                            <span class="span1">3</span>
+                        </li>
+                        <li>
+                            <span>数据库</span>
+                            <span class="span1">2</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--发现-->
+            <div class="end_right_five">
+
+                <div style="display: flex">
+                    <img src="img/发现.png">
+                    <p>快捷连接</p>
+                </div>
+
+                <div class="end_right_six">
+                    <ul>
+                        <li>
+                            <a href="https://www.suse.edu.cn/"><span>四川轻化工大学</span></a>
+                        </li>
+
+                        <li>
+                            <a href="http://edu.sc.gov.cn/"><span>四川省教育厅</span></a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.icourse163.org/"><span>中国大学MOOC</span></a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.csdn.net/"><span>SCDN社区</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+</body>
+
+<script>
+
+
+    var i = 0;
+    var str = "世界奇奇怪怪，愿你可可爱爱！";
+
+    //自动打字效果
+    function typing() {
+        var mydiv = document.getElementById("text");
+        document.getElementById("bar").style.cssText = "display:none";
+        mydiv.innerText = str.substring(0, i++) + (i > str.length ? "" : "|");
+        var typingTimer = setTimeout(typing, 200);
+        if (i > str.length) {
+            clearTimeout(typingTimer);
+            // 竖杠闪烁效果
+            var twinkleTimer = setInterval(twinkle, 100);
+            setTimeout(function () {
+                clearInterval(twinkleTimer);
+                document.getElementById("bar").style.cssText = "display:none";
+                //自动删除文字效果
+                deleteText();
+            }, 100);
+        }
+    }
+
+    typing();
+
+    //自动删除文字效果
+    function deleteText() {
+        var mydiv = document.getElementById("text");
+        mydiv.innerText = str.substring(0, i--) + "|";
+        var deleteTextTimer = setTimeout(deleteText, 50);
+        if (i < 0) {
+            clearTimeout(deleteTextTimer);
+            //删除完后，自动打字，达到循环
+            typing();
+        }
+    }
+
+    // 竖杠闪烁效果
+    var flag = 0;
+
+    function twinkle() {
+        if (flag) {
+            document.getElementById("bar").style.cssText = "color:#fff;";
+            flag = 0;
+        } else {
+            document.getElementById("bar").style.cssText = "color:#ffffff47;";
+            flag = 1;
+        }
+    }
+
+</script>
+</html>
