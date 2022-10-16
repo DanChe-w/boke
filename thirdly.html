@@ -49,9 +49,63 @@
                 <div class="name">心情</div>
             </div>
 
-            <div class="text">
-                <h1 style="color: #9370DB"><span id="text_id"></span> 页面暂未开发</h1>
+
+            <div id="text1">
+                <h3>时间紧，所以以下内容均未添加</h3>
+                <div class="text_grid">
+                    <div><img src="3.jpg"></div>
+                    <div><img src="2.png"></div>
+                    <div><img src="2.png"></div>
+                    <div><img src="3.jpg"></div>
+                    <div><img src="3.jpg"></div>
+                    <div><img src="2.png"></div>
+                </div>
             </div>
+
+            <div id="text2">
+                <h3>时间紧，所以以下内容均未添加</h3>
+                <div class="text_grid">
+                    <div><img src="3.jpg"></div>
+                    <div><img src="3.jpg"></div>
+                    <div><img src="3.jpg"></div>
+                    <div><img src="3.jpg"></div>
+
+                </div>
+            </div>
+
+            <div id="text3">
+                <h3>时间紧，所以以下内容均未添加</h3>
+                <div class="text_grid">
+                    <div><img src="2.png"></div>
+                    <div><img src="2.png"></div>
+                    <div><img src="2.png"></div>
+                    <div><img src="2.png"></div>
+
+                </div>
+            </div>
+
+            <div id="text4">
+                <h3>时间紧，所以以下内容均未添加</h3>
+                <div class="text_grid">
+                    <div><img src="3.jpg"></div>
+                    <div><img src="2.png"></div>
+                    <div><img src="3.jpg"></div>
+                    <div><img src="2.png"></div>
+
+                </div>
+            </div>
+
+            <div id="text5">
+                <h3>时间紧，所以以下内容均未添加</h3>
+                <div class="text_grid">
+                    <div><img src="3.jpg"></div>
+                    <div><img src="2.png"></div>
+                    <div><img src="2.png"></div>
+                    <div><img src="3.jpg"></div>
+
+                </div>
+            </div>
+
         </div>
 
         <!--右-->
@@ -152,7 +206,7 @@
                         </li>
 
                         <li>
-                            <a href="https://www.csdn.net/"><span>SCDN社区</span></a>
+                            <a href="https://www.csdn.net/"><span>CSDN社区</span></a>
                         </li>
                     </ul>
                 </div>
@@ -164,6 +218,9 @@
 
 </div>
 <script>
+    function $(id){
+        return document.getElementById(id);
+    }
     var lis = document.getElementsByClassName("name")
     for (var i = 0; i < lis.length; i++) {
         lis[i].index = i
@@ -174,7 +231,27 @@
                 lis[j].style.backgroundColor = "#DCDEDF";
             }
             this.style.backgroundColor = "#9370DB";
-            document.getElementById("text_id").innerHTML = (this.innerHTML);
+            var i=1;
+            while (i<6){
+                var s="text"+i;
+                $(s).style.display="none";
+                i++;
+            }
+            if(this.innerHTML==="爱好"){
+                $("text1").style.display="block";
+            }
+            else  if(this.innerHTML==="生活"){
+                $("text2").style.display="block";
+            }
+            else  if(this.innerHTML==="音乐"){
+                $("text3").style.display="block";
+            }
+            else  if(this.innerHTML==="游戏"){
+                $("text4").style.display="block";
+            }
+            else  if(this.innerHTML==="心情"){
+                $("text5").style.display="block";
+            }
         }
     }
 </script>

@@ -4,12 +4,12 @@
     padding: 0;
 }
 
-a {
+a{
     color: white;
     list-style: none;
 }
 
-.body1 {
+.body1{
     width: 100%;
     height: 100%;
     background-image: url("3.jpg");
@@ -125,7 +125,7 @@ a {
     position: fixed;
     width: 180px;
     height: 300px;
-    top: 60%;
+    top: 65%;
     left: 90%;
     margin-left: -90px;
 }
@@ -335,7 +335,7 @@ a {
     font-size: 25px;
 }
 
-.end_right_second:hover {
+.end_right_second:hover p{
     transform: scale(1.05);
 }
 
@@ -574,14 +574,114 @@ a {
     border-radius: 20px;
 }
 
-.text {
-    padding-top: 2em;
+/*第一*/
+#text1 {
+    display: none;
+    padding: 2em 0;
     margin-top: 2em;
     border-radius: 20px;
     width: 100%;
-    height: 400px;
     background-color: #e3e3e3;
 }
+.text_grid{
+    margin: auto;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 200px 200px;
+}
+
+.text_grid img{
+    width: 300px;
+    height: 150px;
+}
+
+/*第二*/
+#text2 {
+    display: none;
+    padding: 2em 0;
+    margin-top: 2em;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #e3e3e3;
+}
+.text_grid{
+    margin: auto;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 200px 200px;
+}
+
+.text_grid img{
+    width: 300px;
+    height: 150px;
+}
+/*第三*/
+#text3 {
+    display: none;
+    padding: 2em 0;
+    margin-top: 2em;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #e3e3e3;
+}
+.text_grid{
+    margin: auto;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 200px 200px;
+}
+
+.text_grid img{
+    width: 300px;
+    height: 150px;
+}
+/*第四*/
+#text4 {
+    display: none;
+    padding: 2em 0;
+    margin-top: 2em;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #e3e3e3;
+}
+.text_grid{
+    margin: auto;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 200px 200px;
+}
+
+.text_grid img{
+    width: 300px;
+    height: 150px;
+}
+/*第五*/
+#text5 {
+    display: none;
+    padding: 2em 0;
+    margin-top: 2em;
+    border-radius: 20px;
+    width: 100%;
+    background-color: #e3e3e3;
+}
+.text_grid{
+    margin: auto;
+    width: 700px;
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 200px 200px;
+}
+
+.text_grid img{
+    width: 300px;
+    height: 150px;
+}
+
+
 
 .hide {
     display: none;
@@ -626,15 +726,12 @@ ul.polaroids a {
     text-align: center;
     text-decoration: none;
     color: #333;
-    /*为图片外框设计阴影效果  */
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
     -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
     box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
-    /*设置过渡动画：过渡属性为transform，时长为0.15秒，线性渐变 */
     -webkit-transition: -webkit-transform .15s linear;
     -moz-transition: -webkit-transform .15s linear;
     transition: -webkit-transform .15s linear;
-    /*顺时针旋转2度  */
     -webkit-transform: rotate(-2deg);
     -moz-transform: rotate(-2deg);
     transform: rotate(-2deg);
@@ -652,14 +749,12 @@ ul.polaroids a:after {
 }
 
 ul.polaroids li:nth-child(even) a {
-    /*逆时针旋转10度 */
     -webkit-transform: rotate(10deg);
     -moz-transform: rotate(10deg);
     transform: rotate(10deg);
 }
 
 ul.polaroids li a:hover {
-    /*放大对象1.25倍 */
     -webkit-transform: scale(1.25);
     -moz-transform: scale(1.25);
     transform: scale(1.25);
