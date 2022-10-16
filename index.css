@@ -546,6 +546,8 @@ a{
 
 /*第三*/
 .body3_end_left {
+    white-space: nowrap;
+    overflow: hidden;
     margin: 2em 2em 0 0;
     width: 45%;
     text-align: center;
@@ -584,10 +586,11 @@ a{
     background-color: #e3e3e3;
 }
 .text_grid{
+    padding-top: 1em;
     margin: auto;
-    width: 700px;
+    width: 100%;
     display: grid;
-    grid-template-columns: 350px 350px;
+    grid-template-columns: 50%  50%;
     grid-template-rows: 200px 200px;
 }
 
@@ -605,18 +608,9 @@ a{
     width: 100%;
     background-color: #e3e3e3;
 }
-.text_grid{
-    margin: auto;
-    width: 700px;
-    display: grid;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: 200px 200px;
-}
 
-.text_grid img{
-    width: 300px;
-    height: 150px;
-}
+
+
 /*第三*/
 #text3 {
     display: none;
@@ -626,18 +620,8 @@ a{
     width: 100%;
     background-color: #e3e3e3;
 }
-.text_grid{
-    margin: auto;
-    width: 700px;
-    display: grid;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: 200px 200px;
-}
 
-.text_grid img{
-    width: 300px;
-    height: 150px;
-}
+
 /*第四*/
 #text4 {
     display: none;
@@ -647,18 +631,8 @@ a{
     width: 100%;
     background-color: #e3e3e3;
 }
-.text_grid{
-    margin: auto;
-    width: 700px;
-    display: grid;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: 200px 200px;
-}
 
-.text_grid img{
-    width: 300px;
-    height: 150px;
-}
+
 /*第五*/
 #text5 {
     display: none;
@@ -668,18 +642,7 @@ a{
     width: 100%;
     background-color: #e3e3e3;
 }
-.text_grid{
-    margin: auto;
-    width: 700px;
-    display: grid;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: 200px 200px;
-}
 
-.text_grid img{
-    width: 300px;
-    height: 150px;
-}
 
 
 
